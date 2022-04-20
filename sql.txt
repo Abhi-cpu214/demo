@@ -1,0 +1,9 @@
+Create table emp
+(
+id number(3) primary key,
+name varchar(15) not null,
+age number(7) check(age<=10),
+salary number(10) check(salary>25000),
+Desig varchar(10) default 'GET',
+pan VARCHAR(10) unique
+)
